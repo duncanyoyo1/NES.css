@@ -1,25 +1,12 @@
-.balloon {
+.nes-balloon {
+  @include rounded-corners();
+
   position: relative;
   display: inline-block;
   padding: 1rem 1.5rem;
   margin: 8px;
   margin-bottom: 30px;
   background-color: $background-color;
-
-  // prettier-ignore
-  box-shadow:
-    0 -4px $background-color,
-    0 -8px $base-color,
-    4px 0 $background-color,
-    4px -4px $base-color,
-    8px 0 $base-color,
-    0 4px $background-color,
-    0 8px $base-color,
-    -4px 0 $background-color,
-    -4px 4px $base-color,
-    -8px 0 $base-color,
-    -4px -4px $base-color,
-    4px 4px $base-color;
 
   > :last-child {
     margin-bottom: 0;
@@ -49,18 +36,19 @@
     &::after {
       bottom: -18px;
       width: 18px;
-      height: 3px;
+      height: 4px;
       margin-right: 8px;
+      color: $base-color;
       background-color: $background-color;
       // prettier-ignore
       box-shadow:
-        -4px 0 $base-color,
-        4px 0 $base-color,
+        -4px 0,
+        4px 0,
         -4px 4px $background-color,
-        0 4px $base-color,
-        -8px 4px $base-color,
-        -4px 8px $base-color,
-        -8px 8px $base-color;
+        0 4px,
+        -8px 4px,
+        -4px 8px,
+        -8px 8px;
     }
   }
 
@@ -82,18 +70,18 @@
     &::after {
       bottom: -18px;
       width: 18px;
-      height: 3px;
+      height: 4px;
       margin-left: 8px;
       background-color: $background-color;
       // prettier-ignore
       box-shadow:
-        -4px 0 $base-color,
-        4px 0 $base-color,
+        -4px 0,
+        4px 0,
         4px 4px $background-color,
-        0 4px $base-color,
-        8px 4px $base-color,
-        4px 8px $base-color,
-        8px 8px $base-color;
+        0 4px,
+        8px 4px,
+        4px 8px,
+        8px 8px;
     }
   }
 }

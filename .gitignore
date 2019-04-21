@@ -1,2 +1,5 @@
 node_modules
 .vscode
+css
+storybook-static
+.DS_Store
