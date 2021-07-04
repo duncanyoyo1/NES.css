@@ -23,7 +23,7 @@ yarn add nes.css
 ```
 
 Nosso `package.json` contém alguns metadata adicionais, sob as seguintes chaves:
-* `sass` - caminho para nosso arquivo fronte Sass principal
+* `sass` - caminho para nosso arquivo de código fonte principal Sass
 * `style` - caminho para nosso CSS não-minificado
 
 ### via CDN
@@ -32,7 +32,7 @@ Importe o CSS através de um elemento `<link />`:
 
 ```html
 <!-- minify -->
-<link href="https://unpkg.com/nes.css@2.2.0/css/nes.min.css" rel="stylesheet" />
+<link href="https://unpkg.com/nes.css@2.2.1/css/nes.min.css" rel="stylesheet" />
 <!-- latest -->
 <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
 <!-- core style only -->
